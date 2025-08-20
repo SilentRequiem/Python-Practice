@@ -127,5 +127,50 @@ Visual for Multilines
 print('''You can print multiline comments! They are printed in the same fashion as you wrote them''')
 print("(see code of this py file, used to display the order of precedence)")
 
+# Input Reading
 
+print("\nInstead of importing a Scanner and intializing it then doing the following:")
+print("String x = input.nextLine();")
+print('You do this: name = input("What is your name? ")')
+print('lowercase input is your Scanner!')
 
+this_makes_it_a_string = input("If you don't give a datatype it will automatically make it a String.\nType and see: ")
+print(this_makes_it_a_string)
+
+this_is_an_int = int(input("This one here will always be an int, please make sure it is: "))
+print(this_is_an_int)
+
+print("To make sure it reads a certain datatype do this: datatype( input(Blah blah blah) ).")
+print("Basically surround the intial input command with int() or the data type you want")
+
+print("if you are wondering how to change datatypes simply do what you do in Java...kind of")
+print('''
+Java: int SomeInt = (int) SomeFloat;
+Python: some_int = int(some_float)
+Extra! Python can round like this: rounded_int = round(some_float)
+''')
+print("Here's your int you typed a few moments ago using expansion:", float(this_is_an_int))
+
+print('''
+| Operation        | Description               | Python Example   | Result |
+| ---------------- | ------------------------- | ---------------- | ------ |
+| Truncation       | Removes decimal part      | int(5.9)         | 5      |
+| Rounding         | Nearest whole number      | round(5.9)       | 6      |
+| Ceiling (up)     | Always rounds up          | math.ceil(5.1)   | 6      |
+| Expansion (type) | Converts int to float     | float(5)         | 5.0    |
+''')
+
+print('To use math.ceil make you type "import math" at the top of your code')
+
+# Variables
+
+print("\nVariables work mostly in the same way as Java.")
+print("Instead of camelCase, Python uses snake_case")
+print("Yes, you can still do the latter but I recommend sticking to what that language perfers")
+
+print("You can still concatenate in Python in the same way as Java.")
+print('Ex:Hi, " + name + "!')
+print('Ex: name + " is quite a nice name.')
+
+print("But you can also use a comma to as a replacemet for +. It makes a space for you as well")
+print('Ex: print("My name is", name)')
