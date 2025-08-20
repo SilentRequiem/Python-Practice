@@ -203,3 +203,19 @@ You can still do this in Python in the same way using \ n and other means.
 I if you want to use a variable with it, put parenthesis around it THEN add the comma.
 Since we confirmed the "," is basically a "+" with a space after it, this allows us to save time.
 ''')
+
+# | Code     | Meaning                         | Example                   | Output                 |
+# |----------|----------------------------------|---------------------------|------------------------|
+# | \n       | New line                         | print("Hello\nWorld")     | Hello                  |
+# |          |                                  |                           | World                  |
+# | \t       | Tab (horizontal)                 | print("Name:\tJohn")      | Name:   John           |
+# | \\       | Backslash                        | print("C:\\path\\file")   | C:\path\file           |
+# | \'       | Single quote                     | print('It\'s good')       | It's good              |
+# | \"       | Double quote                     | print("He said \"hi\"")   | He said "hi"           |
+# | \r       | Carriage return (rarely used)    | print("abc\rX")           | Xbc (overwrites 'a')   |
+# | \b       | Backspace                        | print("abc\b")            | ab                     |
+# | \f       | Form feed                        | print("Hello\fWorld")     | Hello[form feed]World  |
+# | \a       | Bell (system beep, not visible)  | print("\a")               | (may beep)             |
+# | \uXXXX   | Unicode character                | print("\u2764")           | ❤                      |
+
+print("To know more about string manip commands, please look above this message in an editor.")
