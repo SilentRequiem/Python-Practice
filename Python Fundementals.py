@@ -1,4 +1,4 @@
-# Python Fundementals - Personal Notes
+# Python Fundementals - Personal notes for future me and some friends
 
 # Printing
 
@@ -162,7 +162,7 @@ print('''
 
 print('To use math.ceil make you type "import math" at the top of your code')
 
-# Variables
+# Variables & some slight String manip
 
 print("\nVariables work mostly in the same way as Java.")
 print("Instead of camelCase, Python uses snake_case")
@@ -174,3 +174,32 @@ print('Ex: name + " is quite a nice name.')
 
 print("But you can also use a comma to as a replacemet for +. It makes a space for you as well")
 print('Ex: print("My name is", name)')
+
+print('''
+If we wanted to make a program that askes for basic info, we'd do it in this way
+
+User Inputs:      
+Given name: Steve
+Family name: Adams
+Street address: 776 Brick Road
+City and postal code: Paris HM34 67W
+
+Code:
+name = input("Given name: ")
+lastname = input("Family name: ")
+address = input("Street address: ")
+extra_addy = input("City and postal code: ")
+
+Result:      
+Steve Adams
+776 Brick Road
+Paris HM34 67W
+
+Code for Result:
+print((name), lastname + "\ n" + address + "\ n" + extra_addy)
+      
+You may have noticed I printed all of that using only ONE LINE.
+You can still do this in Python in the same way using \ n and other means.
+I if you want to use a variable with it, put parenthesis around it THEN add the comma.
+Since we confirmed the "," is basically a "+" with a space after it, this allows us to save time.
+''')
