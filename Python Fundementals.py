@@ -219,3 +219,97 @@ Since we confirmed the "," is basically a "+" with a space after it, this allows
 # | \uXXXX   | Unicode character                | print("\u2764")           | ❤                      |
 
 print("To know more about string manip commands, please look above this message in an editor.")
+
+# Variables (Again)
+print('''
+Variables are not constants. They can be changed frequently.      
+
+Example:
+word = input("Please type in a word: ")
+print(word)
+
+word = word + "???"
+print(word)
+      
+You can make other data types strings like I said before.
+
+result = 10 * 25
+print("The result is " + str(result))
+
+or
+
+result = 10 * 25
+print("The result is", result)
+
+#Think of the comma as a space printed
+
+YOU CANNOT DO THIS
+      
+result = 10 * 25
+print("The result is " + result)
+
+Apparently it's because Python sees it as different data types unlike Java.
+
+'''
+)
+
+print('this is why you should use print(f"Blah blah variable blah") for an easier time')
+
+print('''
+Example:
+name = "Mark"
+age = 37
+city = "Palo Alto"
+print(f"Hi {name}, you are {age} years old. You live in {city}.")
+
+That way you don't need to do + str(var) or , var. print(f) makes changing datatypes into a string format easy
+
+Using commas like this is more annoying to deal with sometimes, best to use it light lines
+
+print("Hi", name, ", you are", age, "years old. You live in", city, ".")
+
+Both will result in the same printout but you can tell which is easier.
+     ''')
+
+# Floating points and averages
+
+print("Finding the average is the really the same as a Java, Py just uses float ")
+
+a1 = float(input("Enter your first number: "))
+a2 = float(input("Enter your second number: "))
+a3 = float(input("Enter your third number: "))
+
+avg_of_123 = (a1 + a2 + a3) / 3
+print(f"Your avg/mean is {avg_of_123}")
+print("Just remember to give a datatype to your input()\n")
+
+# More about Strings
+
+print('''Using end="" allows you to make your own System.out.print in Python''')
+print("tldr: using that makes it so it doesn't make a new line automatically")
+
+print("\nExample:")
+print("Hi ", end="")
+print("there!")
+
+print('''
+print("Hi ", end="")
+print("there!")
+      ''')
+
+print("Using end="" doesn't make an automatic space like you would guess using commas")
+
+print('''
+Yet another example:
+      
+print(5, end="")
+print(" + ", end="")
+print(8, end="")
+print(" - ", end="")
+print(4, end="")
+print(" = ", end="")
+print(5 + 8 - 4) # answer
+      
+Will yield:
+5 + 8 - 4 = 9
+      ''')
